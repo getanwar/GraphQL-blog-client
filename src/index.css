@@ -1,0 +1,31 @@
+.post-title a {
+  color: #000;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #616161;
+}
+
+.post-meta a,
+.comments a {
+	color: #17a2b8;
+}
+
+.comment-meta .comment-heading{
+  display: inline-block;
+}
+
+.form-control-plaintext.form-control-plaintext {
+  display: inline-block;
+  width: auto;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 14px;
+  color: #616161;
+}
