@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import NavbarAuth from './NavbarAuth';
 
 const Navbar = props => (
     <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
@@ -14,10 +15,17 @@ const Navbar = props => (
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/">Home</NavLink>
                     </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/add-post">+ Add New</NavLink>
-                    </li>
+                    {props.authUser ?
+                        <li className="nav-item">
+                            <NavLink className="nav-link" to="/add-post">+ Add New</NavLink>
+                        </li>
+                        :
+                        null
+                    }
                 </ul>
+                <div className="navbar-right">
+                    <NavbarAuth {...props} />
+                </div>
             </div>
         </div>
     </nav>
