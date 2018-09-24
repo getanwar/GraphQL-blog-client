@@ -37,7 +37,7 @@ class App extends Component {
 		return (
 			<React.Fragment>
 				<Navbar authUser={this.state.authUser} onLogout={this.dismissAuth} />
-				<div className="container">
+				<div className="container_">
 					<Switch>
 						<Route path="/login" render={(machedProps) => <Login {...machedProps} onSuccess={this.fetchAuthUser} />} />
 						<Route path="/signup" render={(machedProps) => <Login {...machedProps} onSuccess={this.fetchAuthUser} />} />
