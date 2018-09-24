@@ -31,7 +31,7 @@ class App extends Component {
 		this.setState({authUser: null});
 	}
 	componentDidMount() {
-		this.fetchAuthUser();
+		// this.fetchAuthUser();
     }
 	render() {
 		return (
